@@ -1,0 +1,324 @@
+.body{
+    background-image: url('sportpic.webp');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+header{
+    color: white;
+    text-shadow: 0px 0px 5px black, 0px -5px 5px black;
+    text-align: center;
+    font-size: 72px;
+    font-family: fantasy;
+    margin: 5px;
+    padding: 5px;       
+}
+ul {
+    list-style-type: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+ li {
+    float: left;
+    border-right: 1px solid white;
+    color: lightblue;
+    font-size: 30px;
+    padding: 10px;
+    }
+ li a {
+    display: block;
+    padding: 6px;
+    color: rgb(0, 2, 7);
+ }
+ li:last-child {
+    border-right: none;
+ }
+ a:hover {
+     color: red;
+ }
+ 
+ div {
+    padding:10px;
+    margin-top:10px;
+    background-color:rgb(117, 122, 133);
+    height:1000px;
+ }
+ .text {
+     font-size: large;
+     font-family: serif;
+     margin: 5px;
+ }
+ #form1 {
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ #about {
+     margin: 5% 12% 5% 12%;
+     padding: 5px;
+     background: linear-gradient(lightblue, darkblue);
+    
+ }
+ #aboutBody {
+     background: linear-gradient(blue, orange, red);
+
+ }
+ #register {
+     text-align: center;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ #registrationForm {
+     font-size: larger;
+    text-align: center;
+    border-style: double;
+    margin: 5% 30% 30% 30%;
+    padding: 5px;
+       
+ }
+ #registrationBody {
+    background-image: url('background.png');
+ }
+ @media screen and (min-width: 300px){
+     #registrationBody {width: 150px; float: left};
+ }
+/*baseball css with grid*/
+#baseballBody {
+    background-color: #3b404e;
+}
+.container {
+    display: grid;
+    width: 100%;
+    height: 600px;
+    background-color: #3b404e;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "sidebar content-1 content-1"
+        "sidebar content-2 content-3"
+      }
+  
+  .sidebar {
+    grid-area: sidebar;
+    transform: translateY(20px);
+    background-color: #3b404e;
+    height: 100px;
+  }
+  
+  .content-1 {
+    grid-area: content-1;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #3b404e;    
+  }
+  
+  .content-2 {
+    grid-area: content-2;
+    transform: translateY(100px);
+    background-color: #3b404e;
+    height: 260px;
+  }
+  
+  .content-3 {
+    grid-area: content-3;
+    background-color: #3b404e;
+    height: 600px;
+  }
+  #basePic1 {
+    margin: 5px;
+    padding: 5px;
+  }
+  #basePic3 {
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  #basePic2 {
+    margin: 5px;
+    padding: 5px;
+    
+  }
+  #basePic4 {
+      margin: 5px;
+      padding: 5px;
+    }
+  #basePic5 {
+    margin: 5px;
+    padding: 5px;
+  }
+  #basePic6 {
+    margin: 5px;
+    padding: 5px;
+  }
+  .footer1 {
+    background-color: #3b404e;
+  }
+
+/*basketball css with box model*/
+#basketballHead {
+    background-image: url('basketball-banner.webp');  
+   
+}
+#basket {
+    background-image: linear-gradient(to right, rgb(219, 89, 14), rgb(230, 34, 34));
+}
+#ball {
+    outline-style: groove;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(219, 89, 14), rgb(230, 34, 34));
+    width: 100%;
+    height: 110px;
+}
+#ballPic:hover{
+    animation-name: ballRoll;
+     animation-duration: 10s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+    }
+@keyframes ballRoll{
+    30%{transform: translateX(500px);
+        transform: rotateX(720deg);}
+    } 
+#first{
+    float: left;
+    font-size: 40px;
+    margin: 5px;
+    padding: 5px;
+    font-weight: bolder;
+}
+#second {
+    float: right;
+    font-size: 40px;
+    margin: 5px;
+    padding: 5px;
+    font-weight: bolder;
+}
+#teamPic1 {
+    background-image: linear-gradient(to right, rgb(219, 89, 14), rgb(230, 34, 34));
+    float:left;
+    height: 280px;
+    width: 290px;
+}
+#basketballInfo {
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#basketballVideo {
+    float: right;
+    margin: 5px;
+    padding: 5px;
+    background-image: linear-gradient(to right, rgb(219, 89, 14), rgb(230, 34, 34));
+    height: 310px;
+    width: 55ppx;
+}
+
+
+ /*soccer css with grid*/
+ .layOut {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 300px 300px 300px;
+     background-color: lightskyblue;
+ }
+ .soccerText1 {
+     grid-column: 1/2;
+     grid-row: 1/2;
+     text-align: left;
+     font-size: 16px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background-color: lightskyblue;
+ }
+ .animation {
+     grid-column: 2/3;
+     grid-row: 1/2;
+     background-color: lightskyblue;
+     align-content: right;
+     margin-bottom: 5px;
+     padding-bottom: 10px;
+     height: 250px;
+     width: 450px;
+ }
+ .animation:hover{
+    animation-name: soccer;
+     animation-duration: 5s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     opacity: 50%;
+ }
+ @keyframes soccer {
+    30%{transform : scale(1.5,1.5)}
+         
+    
+}
+ .soccerPic1 {
+     grid-column: 3/4;
+     grid-row: 1/2;
+     overflow-x: auto;
+     background-color: lightskyblue;
+            
+ }
+  
+ .soccerPic2 {
+     grid-column: 1/2;
+     grid-row: 2/3;
+     overflow-x: auto; 
+     background-color: lightskyblue;  
+     transform: translateY(20px);
+     
+ }
+ .mainVideo {
+     grid-column: 2/3;
+     grid-row: 2/3;     
+     background-color: lightskyblue;
+     transform: translateY(20px);
+ }
+ .soccerText2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: left;
+     font-size: 16px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background-color: lightskyblue;
+     transform: translateY(5px);
+ }
+ .soccerNavBar {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    background-color: lightskyblue;
+ }
+ #soccerHead {
+    background-color: lightskyblue;
+     }
+.weatherBox {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: 5px;
+    padding: 5px;
+    align-content: center;
+    border-style: double;
+    transform: translateY(50px);
+    height: 350px;
+    width: 600px;
+    background-color: rgb(193, 210, 235);
+    
+}
+#weatherHead {
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+}
+.weatherInfo {
+    text-align: center;
+    font-size: 26px;
+    font-family: monospace;
+}
+.weatherLike {
+    text-align: center;
+    font-size: 26px;
+    font-family: monospace;
+}
+.weatherLike2 {
+    text-align: center;
+    font-size: 26px;
+    font-family: monospace; 
+}

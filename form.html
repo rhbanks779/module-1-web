@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body id='form1'>
+    <header>
+        Youth Sports Of Cincinnati
+    </header>
+    <h1 id='register'>Registration Form</h1>
+
+    <div id='registrationForm'>
+        <h2><em><strong>Athlete Information</strong></em></h2>
+        <label for='firstName'>First Name</label>
+        <input type='text' id='firstName' name='firstName'><br><br>
+        <label for='lastName'>Last Name</label>
+        <input type='text' id='lastName' name='lastName'><br><br>
+        <label for='dob'>Date of Birth</label>
+        <input type="date" id='dob' name='dob' min='2000-01-01'><br><br>
+        <label for='gender'>Gender</label><br>
+        <input type='radio' name="gender" value='male'>Male<br>
+        <input type="radio" name='gender' value='femal'>Female<br><br>
+
+        <h2><em><strong>Interested Sport</strong></em></h2>
+        <label><input type='checkbox' name='sport' value='baseball'>Baseball<br>
+            <input type='checkbox' name='sport' value='basketball'>Basketball<br>
+            <input type='checkbox' name='sport' value='soccer'>Soccer<br><br>
+
+        <h2><em><strong>Parent Information</strong></em></h2>
+        <label for='parentName'>Parent's Name(s)</label>
+        <input type='text' id='parentName' name='parentName'><br><br>
+
+        <label for="phoneNumber">Primary Phone Number</label>
+        <input type="tel" id='phoneNumber' name='phoneNumber' placeholder='xxx-xxx-xxxx'><br><br>
+
+        <label for='address1'>Address 1</label>
+        <input type="text" id='address1' name='address1' placeholder="Enter Primary Address"><br><br>
+
+        <label for='address2'>Secondary Address</label>
+        <input type="text" id='address2' name='address' placeholder='Enter address 2 if applicable'><br><br>
+
+        <label for='city'>City</label>
+        <input type='text' id='city' name='city'><br><br>
+
+        <label for="state">State</label>
+        <select id='state' name='state'><option value='Ohio'>Ohio</option><option value="Indiana">Indiana</option><option value='Kentucky'>Kentucky</option></select><br><br>
+
+        <label for='zip'>Zip Code</label>
+        <input type="text" id='zip' name='zip' placeholder='xxxxx' pattern=[0-9]{5} required><br><br>
+
+        <label for='email1'>Primary Email Address</label>
+        <input type="email" id='email1' name='email1' placeholder='em@em.com' required><br><br>
+        
+              
+        <button onclick='pageReset()'>Submit</button>
+        </div>
+    <ul class = 'navBar'>
+        <li><a href="indexpg1.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href='baseball.html'>Baseball</a></li>
+        <li><a href='basketball.html'>Basketball</a></li>
+        <li><a href='soccer.html'>Soccer</a></li>
+        <li><a href="form.html">Registration</a></li>
+    </ul>
+</body>
+</html>
